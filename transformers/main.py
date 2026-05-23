@@ -15,7 +15,7 @@ def generated_text(prompt, length):
 
 def explain_process():
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    text = "Hello World"
+    text = "Hello World !"
     tokens = tokenizer.encode(text)
     decoded = tokenizer.decode(tokens)
 
@@ -33,4 +33,4 @@ def generate_text_from_prompt():
 
 if __name__ == "__main__":
     explain_process()
-    generate_text_from_prompt()
+    # generate_text_from_prompt()
